@@ -6,4 +6,5 @@ However, there is a major issue in this project. There are more than 5000 voices
 For now it perfectly works but needs lots of ".wav" voices, so I left this project to rest :) maybe one day I'll come back and record the voices.
 
 *You can use this script for your personal good, but if you make money out of it tell me how :) and you may mention my name.
+
 *I completed this project several months ago, but I created my account and wanted to upload this project. That's why, all the files are uploaded on the same date.
