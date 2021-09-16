@@ -1,4 +1,4 @@
-import os
+#import os
 Main_Loop = 1
 def vowel(letter111):
     if letter111 == "a" or letter111 == "ı" or letter111 == "o" or letter111 == "u" or letter111 == "e" or letter111 == "i" or letter111 == "ö" or letter111 == "ü":
@@ -113,17 +113,17 @@ while Main_Loop == 1:
                 except:
                     random_variable_for_else_func = 1
     
-    
-    f = open("Heceler.txt", "w")
-    for x in spell_list:
-        if x == " ":
-            f.write(",")
-            f.write(" ")
-        else:
-            f.write(x)
-            f.write(" ")
-    coder = open("Kod yazdırma.py", "w")
-    coders_code = """import os\npath = os.path\nsource_group_count = 1\nword = 0\nspell = open("Heceler.txt", "r")\nspell_list = spell.read().split()\nfor x in range(len(spell_list)):\n    if spell_list[x] == ",":\n        spell_list[x] = " "\nvoicefile = open("Voice.py", "w")\nvoicefile.write("import pyglet\\n")\nvoicefile.write("import os\\n")\nvoicefile.write("player = pyglet.media.Player()\\n")\n\nfor x in spell_list:\n    if x == " ":\n        source_group_count += 1\n\nfor x in range(source_group_count):\n    code_line_1 = "source_group_"+str(x)+" = pyglet.media.SourceGroup()\\n"\n    voicefile.write(code_line_1)\n\nfor x in spell_list:\n    if x == " ":\n        word += 1\n    else:\n        code_line_2 = "source_group_"+str(word)+".add(pyglet.media.load(\'"+x+".wav\'))"\n        voicefile.write(code_line_2)\n        voicefile.write("\\n")\n\nfor x in range(source_group_count):\n    voicefile.write("player.queue(source_group_"+str(x)+")\\n")\n\n\nvoicefile.write("player.play()\\n")\ncode_line_3 = "os.startfile(\'Heceleme.py\')"+'\\n'\nvoicefile.write(code_line_3)\nvoicefile.write("pyglet.app.run()")\nos.startfile("Voice.py")\n"""
-    coder.write(coders_code)
-    os.startfile("Kod yazdırma.py")
-    break
+    print(spell_list)
+#    f = open("Heceler.txt", "w")
+#    for x in spell_list:
+#        if x == " ":
+#            f.write(",")
+#            f.write(" ")
+#        else:
+#            f.write(x)
+#            f.write(" ")
+#    coder = open("Kod yazdırma.py", "w")
+#    coders_code = """import os\npath = os.path\nsource_group_count = 1\nword = 0\nspell = open("Heceler.txt", "r")\nspell_list = spell.read().split()\nfor x in range(len(spell_list)):\n    if spell_list[x] == ",":\n        spell_list[x] = " "\nvoicefile = open("Voice.py", "w")\nvoicefile.write("import pyglet\\n")\nvoicefile.write("import os\\n")\nvoicefile.write("player = pyglet.media.Player()\\n")\n\nfor x in spell_list:\n    if x == " ":\n        source_group_count += 1\n\nfor x in range(source_group_count):\n    code_line_1 = "source_group_"+str(x)+" = pyglet.media.SourceGroup()\\n"\n    voicefile.write(code_line_1)\n\nfor x in spell_list:\n    if x == " ":\n        word += 1\n    else:\n        code_line_2 = "source_group_"+str(word)+".add(pyglet.media.load(\'"+x+".wav\'))"\n        voicefile.write(code_line_2)\n        voicefile.write("\\n")\n\nfor x in range(source_group_count):\n    voicefile.write("player.queue(source_group_"+str(x)+")\\n")\n\n\nvoicefile.write("player.play()\\n")\ncode_line_3 = "os.startfile(\'Heceleme.py\')"+'\\n'\nvoicefile.write(code_line_3)\nvoicefile.write("pyglet.app.run()")\nos.startfile("Voice.py")\n"""
+#    coder.write(coders_code)
+#    os.startfile("Kod yazdırma.py")
+#    break
